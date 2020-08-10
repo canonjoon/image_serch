@@ -1,3 +1,10 @@
+body {
+    text-align: center;
+    width: auto;
+    min-width: 200px;
+}
+
+
 #image1 {
     border: 3px green solid;
     width: auto;
