@@ -4,9 +4,13 @@ bs4==0.0.1
 certifi==2020.6.20
 chardet==3.0.4
 click==7.1.2
+<<<<<<< HEAD
 colorama==0.4.3
 Flask==1.1.2
 gunicorn==20.0.4
+=======
+Flask==1.1.2
+>>>>>>> 9dbb9229572a5ae6c2e33ab8455cc56ea9a84a2e
 idna==2.10
 isort==4.3.21
 itsdangerous==1.1.0
@@ -21,6 +25,9 @@ six==1.15.0
 soupsieve==2.0.1
 toml==0.10.1
 urllib3==1.25.10
+<<<<<<< HEAD
 urlopen==1.0.0
+=======
+>>>>>>> 9dbb9229572a5ae6c2e33ab8455cc56ea9a84a2e
 Werkzeug==1.0.1
 wrapt==1.12.1
