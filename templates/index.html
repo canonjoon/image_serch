@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/index.css">
+    <title>Image test</title>
+</head>
+<body>
+    <h1>이미지 검색</h1>
+    <form action="\" method="get" name="naverserch" id='num'>
+        <label for="">이미지 검색할 단어를 입력 하세요</label>
+        <input type="text" name="serch" placeholder="검색 하세요" size="auto"><br>
+        <label for="">검색할 이미지 갯수(기본 20장)</label>
+        <input type="text" name="serch_num" value="20" size="3"><br>
+        <button type="submit" id="button">검색</button>
+    </form>
+
+    <div id='image_n'>
+        
+        <div class='title' >Naver <br>
+            <div id='image'>
+            {% for i in n_data %}
+            <!-- {{i}}<br> -->
+            <img src="{{i}}" alt=""  height="100">&nbsp;
+            
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
+    <div id='image_g'>
+        
+        <div class='title'>Google <br>
+            <div id='image2'>
+            {% for i in g_data %}
+            <!-- {{i}}<br> -->
+            <img src="{{i}}" alt=""  height="100">&nbsp;
+            
+            {% endfor %}
+        </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
