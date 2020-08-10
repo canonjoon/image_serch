@@ -22,9 +22,9 @@ def index():
     if not n_data: # 빈 값을 받아왔을 때 빈화면 출력하기 위한 조건문.
         return render_template('index.html')
     
-    #g_data = g_image_get.imge_google(serch,num)
+    g_data = g_image_get.imge_google(serch,num)
     
-    return render_template('index.html') #, n_data=n_data, g_data=g_data  검색 삭제
+    return render_template('index.html', n_data=n_data, g_data=g_data)
 
 # 메인 테스트
 if __name__ == "__main__":
