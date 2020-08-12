@@ -18,25 +18,28 @@
 
     <div id='image_n'>
         
-        <div class='title' >Naver <br>
-            <div id='image'>
-            {% for i in n_data %}
-            <!-- {{i}}<br> -->
-            <img src="{{i}}" alt=""  height="100">&nbsp;
+      <div class='title'>Naver </div>
+           <div class='image'>    
+                {% for i in n_data %}
+                <!-- {{i}}<br> -->
+                <div class='scale' style="display:inline-block;">
+                    <img src="{{i}}" alt=""  height="100" >
+                </div>
+                {% endfor %}
             
-            {% endfor %}
-        </div>
-        </div>
+                
+            </div>
     </div>
 
     <div id='image_g'>
         
         <div class='title'>Google <br>
-            <div id='image2'>
+            <div class='image'>
             {% for i in g_data %}
             <!-- {{i}}<br> -->
-            <img src="{{i}}" alt=""  height="100">&nbsp;
-            
+            <div class='scale' style="display:inline-block;">
+                <img src="{{i}}" alt=""  height="100" >
+            </div>
             {% endfor %}
         </div>
         </div>

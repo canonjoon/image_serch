@@ -5,16 +5,7 @@ body {
 }
 
 
-#image1 {
-    border: 3px green solid;
-    width: auto;
-    min-height: 100px;
-}
-#image1 {
-    border: 3px red solid;
-    width: auto;
-    min-height: 100px;
-}
+
 .title {
     text-align: center;
     color: red;
@@ -27,3 +18,23 @@ body {
 #num,h1 {
     text-align: center;
 }
+
+.scale {
+    position: relative;
+    z-index: 1;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transition: all 0.3s ease-in-out;   /* 부드러운 모션을 위해 추가*/
+  }
+  .scale:hover {
+      z-index: 2;
+    transform: scale(2.5);
+    -webkit-transform: scale(2.5);
+    -moz-transform: scale(2.5);
+    -ms-transform: scale(2.5);
+    -o-transform: scale(2.5);
+  }
+  .img {width:325px; height:280px; overflow:hidden }
